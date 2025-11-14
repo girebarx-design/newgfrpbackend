@@ -59,7 +59,11 @@ export default buildConfig({
     url: process.env.DATABASE_URI || '',
   }),
   sharp,
-  cors: ['http://localhost:3000', 'https://newgfrpfrontend.vercel.app'],
+  cors: [
+    'http://localhost:3000',
+    'https://newgfrpfrontend.vercel.app',
+    'https://www.gfrpindia.com',
+  ],
   plugins: [
     payloadCloudPlugin(),
     // storage-adapter-placeholder
